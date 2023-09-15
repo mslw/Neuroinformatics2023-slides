@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<title> Flash talk @ INCF2023 </title>
+	<meta name="description" content=" incf-2023-flashtalk ">
+	<meta name="author" content=" Michał Szczepanik ">
+
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js/dist/theme/beige.css">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="custom_styles.css">
+    </head>
+    <body>
+
+	<div class="reveal">
+	    <div class="slides">
+
+		<!-- FRONT PAGE -->
+		<section>
+		    <h2 style="margin-bottom: 0;">Distributed data management for large collaborative projects</h2>
+		    <h3 style="margin-bottom: 0;">DataLad ecosystem in Collaborative Research Center 1451 </h3>
+		    <div style="margin-top:0.5em;">
+			<table style="border: none;">
+			    <tr>
+				<td>Michał Szczepanik<br>
+				    <small>
+					<a href="https://masto.ai/@doktorpanik" target="_blank">
+					    <img data-src="pics/mastodon.svg" style="height:30px;margin:0px" />
+					    @doktorpanik
+					</a>
+				    </small>
+				</td>
+				<td>
+				    <small>Psychoinformatics group,<br>
+					Institute of Neuroscience and Medicine, Brain &amp; Behavior (INM-7),<br>
+					Research Center Jülich, Germany
+				    </small>
+				</td>
+			</table>
+		    </div>
+
+		    <hr>
+
+		    <div class="flex-container" style="display:flex;flex-direction:row;justify-content:center;align-items:center">
+
+			<img style="height:80px;margin-right:20px;margin-left:20px" data-src="pics/fzj_logo.svg" />
+			<img src="pics/sfb1451_logo.svg" style="height:80px;margin-right:20px;margin-left:20px" alt="sfb1451 logo" />
+			<img src="pics/datalad_git.svg" style="height:80px;margin-right:20px;margin-left:20px" alt="datalad logo" />
+
+		    </div>
+		</section>
+
+		<section>
+
+		    <h2>Setup</h2>
+
+		    <div class="flex-container" style="display:flex;flex-direction:row">
+			<div style="flex-grow: 1; margin-right:1em">
+			    <img data-src="pics/noun-collaboration-4519582.svg" style="width:300px;margin:0px" />
+			</div>
+			<div style="flex-grow: 3">
+			    <ul>
+				<li>Collaborative Research Center</li>
+				<li>Key Mechanisms of Motor Control in Health and Disease</li>
+				<li>24 research groups: animal, human, clinical, & cross-linking</li>
+			    </ul>
+
+			</div>
+
+		</section>
+
+		<section>
+
+		    <h2>Challenge</h2>
+
+		    <div class="flex-container" style="display:flex;flex-direction:row">
+			<div style="flex-grow: 1;margin-right:1em"">
+			    <img data-src="pics/noun-complexity-2830034.png" style="width:300px;margin:0px" />
+			</div>
+			<div style="flex-grow: 3">
+			    <ul>
+				<li>Diverse data (origin, storage, privacy)</li>
+				<li>Shared data resource for computational modelling</li>
+			    </ul>
+
+			</div>
+			
+		</section>
+
+		<section>
+
+		    <h2>Solution</h2>
+
+		    <div class="flex-container" style="display:flex;flex-direction:row">
+			<div style="flex-grow: 1">
+			    <img data-src="pics/noun-decentralisation-2885145.png" style="width:300px;margin:0px" />
+			</div>
+			<div style="flex-grow: 3">
+			    <ul>
+				<li>Decentralized research data management</li>
+				<li>Projects control standards, storage, sharing</li>
+				<li>DataLad as overlay structure (indexing data at its location)</li>
+			    </ul>
+
+			</div>
+
+		</section>
+
+		<section>
+
+		<section>
+
+		<h2>Software ecosystem</h2>
+
+		<div class="flex-container" style="display:flex;flex-direction:row">
+		    <div style="flex-grow: 1">
+			<img data-src="pics/noun-data-sharing-4664300.png" style="width:300px;margin:0px" />
+		    </div>
+		    <div style="flex-grow: 3">
+			<ul>
+			    <li>Version control & availability tracking</li>
+			    <li>Data presentation & data portal</li>
+			    <li>Metadata extraction</li>
+			    <li>Graphical user interface</li>
+			    <li>Manual dataset descriptions</li>
+			    <li>Useful storage infrastructure</li>
+			</ul>
+
+		    </div>
+
+		</section>
+
+
+</div> <!-- /.slides -->
+</div> <!-- /.reveal -->
+
+<script src="reveal.js/dist/reveal.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+<script src="custom_functions.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+     <script src="reveal.js/plugin/copycode/copycode.js"></script> -->
+<script>
+ // More info about initialization & config:
+ // - https://revealjs.com/initialization/
+ // - https://revealjs.com/config/
+ Reveal.initialize({
+     hash: true,
+     // The "normal" size of the presentation, aspect ratio will be preserved
+     // when the presentation is scaled to fit different resolutions. Can be
+     // specified using percentage units.
+     width: 1280,
+     height: 960,
+     // Factor of the display size that should remain empty around the content
+     margin: 0.02,
+     // Bounds for smallest/largest possible scale to apply to content
+     minScale: 0.2,
+     maxScale: 1.0,
+
+     controls: true,
+     progress: true,
+     history: true,
+     center: false,
+     slideNumber: 'c',
+     pdfSeparateFragments: false,
+     pdfMaxPagesPerSlide: 1,
+     pdfPageHeightOffset: -1,
+     transition: 'slide', // none/fade/slide/convex/concave/zoom
+     // Learn about plugins: https://revealjs.com/plugins/
+     plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+ });
+</script>
