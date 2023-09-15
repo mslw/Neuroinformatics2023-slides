@@ -131,10 +131,77 @@
     </table>
 </section>
 
+<section>
+
+    <section>
+	<h2>What you should know about</h2>
+
+    <ul>
+	<li>… command line</li>
+	<li>… anaconda</li>
+	<li>… pip</li>
+    </ul>
+    </section>
+
+    <section>
+	<h2>Command line</h2>
+
+	<pre><code data-trim class="language-console">
+$ cowsay -w "Hello world"
+ _____________
+< Hello world >
+ -------------
+        \   ^__^
+         \  (OO)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+	</code></pre>
+
+	<a href="https://swcarpentry.github.io/shell-novice/">swcarpentry.github.io/shell-novice/</a>
+
+    </section>
+
+    <section>
+	<h2>Jupyter Notebook</h2>
+	<img data-src="pics/jupyter_notebook.png" />
+    </section>
+
+    <section>
+	<h2>Virtual environments and pip</h2>
+
+	<ul>
+	    <li><code>venv</code> -- creation of "virtual environments"</li>
+	    <li><code>pip</code> -- package installer for Python <small>PIP Installs Packages</small></li>
+	</ul>
+
+		<pre><code data-trim class="language-console">
+$ python -m venv neuroinformatics2023
+$ source neuroinformatics2023/bin/activate
+$ pip install datalad
+		</code></pre>
+
+    </section>
+
+    <section>
+	<h2>Conda</h2>
+	<ul>
+	    <li>Package management and environment management system</li>
+	    <li>Not just Python</li>
+	</ul>
+
+	    <pre><code data-trim class="language-console">
+$ conda create --name neuroinformatics2023
+$ conda activate neuroinformatics2023
+$ conda install -c conda-forge datalad
+	    </code></pre>
+
+    </section>
+</section>
 
 <section>
     <section>
-	<h2>Building blocks</h2>
+	<h2>Git, git-annex and DataLad</h2>
 	<ul>
 	    <li class="fragment"><b>Git</b> - the stupid content tracker</li>
 	    <li class="fragment">With <b>git-annex</b>, git is instead "a stupid filename and metadata tracker"</li>
@@ -144,7 +211,7 @@
     </section>
 
     <section>
-	<h2>Talk is cheap, show me the code: Git vs DataLad</h2>
+	<h2>Talk is cheap, show me the code</h2>
 	<iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/Yrg6DgOcbPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<a href="https://www.youtube.com/watch?v=Yrg6DgOcbPE">youtube.com/watch?v=Yrg6DgOcbPE</a>
     </section>
